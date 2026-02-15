@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            h2{
+                text-align: center;
+            }
+            .registration-form {
+                max-width: 500px;
+                margin: 30px auto;
+                background: #f4f8fb;
+                padding: 24px 20px;
+                border-radius: 10px;
+                border: 1px solid #b0bec5;
+            }
+            .registration-form fieldset {
+                border-radius: 8px;
+                border: 1px solid #b0bec5;
+                margin-bottom: 18px;
+                padding: 12px 16px;
+            }
+            .registration-form legend {
+                font-weight: bold;
+                color: #222;
+            }
+            .registration-form label {
+                font-weight: 500;
+                margin-bottom: 2px;
+                color: #222;
+                display: inline-block;
+            }
+            .registration-form input,
+            .registration-form select,
+            .registration-form textarea {
+                padding: 7px;
+                border: 1px solid #b0bec5;
+                border-radius: 5px;
+                font-size: 1rem;
+                margin-bottom: 10px;
+                margin-top: 2px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .registration-form input[type="radio"],
+            .registration-form input[type="checkbox"] {
+                width: auto;
+                margin-right: 6px;
+            }
+            .registration-form input[type="submit"],
+            .registration-form input[type="reset"] {
+                width: auto;
+                background: #4285F4;
+                color: #fff;
+                border: none;
+                padding: 8px 18px;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-weight: bold;
+                margin-right: 8px;
+                cursor: pointer;
+            }
+
+        </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="About.html">About Me</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Contacts.html">Contact</a>
+            <a href="form.html">User Registration</a>
+        </nav>
+    </header>
+
+    <div>
+        <h2>User Registration Form</h2>
+        <form class="registration-form" action="#" method="post">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required pattern="[A-Za-z\s]+"><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required pattern="^(?=.*[A-Z])(?=.*\d).{8,}$"><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="tel">Phone No.</label>
+                <input type="tel" id="tel" name="tel" required pattern="^(98|97)[0-9]{8}$"><br><br>
+             
+            </fieldset>
+          
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </fieldset>
+
+           
+            <fieldset>
+                <legend>Skills</legend>
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="skills" value="JavaScript">
+                <label for="js">JavaScript</label>
+                <input type="checkbox" id="php" name="skills" value="PHP">
+                <label for="php">PHP</label>
+                <input type="checkbox" id="mysql" name="skills" value="Mysql">
+                <label for="mysql">Mysql</label>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Address Information</legend>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="1" style="resize: none;" required></textarea><br><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select Country--</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Other">Other</option>
+                </select>
+            </fieldset>
+
+           
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="profilepic">Upload Profile Picture:</label>
+                <input type="file" id="profilepic" name="profilepic" accept="image/*"><br><br>
+
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">I agree to the Terms & Conditions</label>
+            </fieldset>
+
+      
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+</div>
+    
+<div>
+    <footer>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yogeshthapa.080@kathford.edu.np"><img
+                src="images/email.jpg" alt="Email" width="30" height="30"></a>
+        <a href="www.linkedin.com"><img src="images/linkedin.png" alt="LinkedIn" width="30" height="30"></a>
+        <a href="https://github.com/Yogesh24129"><img src="images/github.png" alt="GitHub" width="30" height="30"></a>
+    
+    </div>
+    </body>
+</html>
